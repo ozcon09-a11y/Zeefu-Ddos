@@ -83,6 +83,25 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
         threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
 
 
+#DATA
+banner = f"""
+{Fore.BLUE}████████▒▒ ██▒▒        ████▒▒     ███▒▒  ██████▒▒
+{Fore.BLUE}██▒▒       ██▒▒      ██▒ ██▒▒  ██▒  ██▒▒██▒▒  ██▒▒
+{Fore.BLUE}██▒▒       ██▒▒     ██▒▒   ██▒▒██▒▒  ██▒▒██▒▒   ██▒▒
+{Fore.BLUE}██▒▒       ██▒▒     ██▒▒   ██▒▒██▒▒  ██▒▒██▒▒   ██▒▒
+{Fore.CYAN}██████▒▒   ██▒▒     ██▒▒   ██▒▒██▒▒  ██▒▒██▒▒   ██▒▒
+{Fore.CYAN}██▒▒       ██▒▒      ██▒   ██▒▒  ██▒▒██▒▒ ██▒▒ ██▒▒
+{Fore.CYAN}██▒▒       ████████▒▒ ████▒▒     ████▒▒   ██████▒▒
+{Fore.CYAN}▒▒▒        ▒▒ ▒▒ ▒▒   ▒▒ ▒▒      ▒ ▒▒     ▒▒▒▒▒
+{Fore.CYAN}▒▒          ▒ ▒ ▒      ▒ ▒        ▒▒        ▒▒
+{Fore.RED}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{Fore.RED}┣{Fore.WHITE}            BRIGADE ATTACKERS ZNEEPER ELITE
+{Fore.RED}┣{Fore.GREEN}                     INTERNAL SCRIFT
+{Fore.RED}┣{Fore.YELLOW}                       BY: KF'24
+{Fore.RED}┣{Fore.BLUE}                          —oO0Oo—
+{Fore.RED} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{Fore.LIGHTYELLOW_EX}SC INI MEMVUTUHKAN 35 DETIK UTK MELAKUKAN SERANGAN{Fore.RESET}"""
+print(banner)
 host = ""
 ip = ""
 target_loader = input(f"{Fore.LIGHTYELLOW_EX}IP/URL>")
