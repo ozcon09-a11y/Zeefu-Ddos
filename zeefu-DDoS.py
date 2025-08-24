@@ -111,7 +111,7 @@ banner = f"""
 {Fore.RED}┣{Fore.GREEN}                     INTERNAL SCRIFT
 {Fore.RED}┣{Fore.YELLOW}                       BY: KF'24
 {Fore.RED}┣{Fore.BLUE}                          —oO0Oo—
-{Fore.RED} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{Fore.RED} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Fore.YELLOW}# (OFFLINE) {Fore.LIGHTYELLOW_EX}TOOL v2 #{Fore.RESET}"""
 
 print(banner)
 host = ""
