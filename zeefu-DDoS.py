@@ -101,6 +101,7 @@ banner = f"""
 {Fore.RED}┣{Fore.BLUE}                          —oO0Oo—
 {Fore.RED} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 {Fore.LIGHTYELLOW_EX}SC INI MEMVUTUHKAN 35 DETIK UTK MELAKUKAN SERANGAN{Fore.RESET}"""
+
 print(banner)
 host = ""
 ip = ""
