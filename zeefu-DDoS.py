@@ -98,12 +98,12 @@ banner = f"""
 {Fore.WHITE}   ▒▒▒▒▒▒▒▒       ▒▒▒▒▒▒▒▒       ▒▒▒▒▒▒▒       ▒▒                ▒▒▒
 {Fore.CYAN}     ▒▒▒▒▒          ▒▒▒▒▒          ▒▒▒▒▒       ▒                 ▒
 {Fore.YELLOW}╔═════════════════════════════════════════════════════════════════════════╗
-{Fore.YELLOW}║{Fore.WHITE}                H U D A I R U L  A L - A Q S H A                     {Fore.YELLOW}║
-{Fore.YELLOW}║{Fore.GREEN}                         INTERNAL SCRIPT                             {Fore.YELLOW}║
-{Fore.YELLOW}║{Fore.BLUE}                            ATTACK ZEON                              {Fore.YELLOW}║
-{Fore.YELLOW}║{Fore.WHITE}                             By:Kf'24                                {Fore.YELLOW}║
-{Fore.YELLOW}║{Fore.LIGHTYELLOW_EX}                             ——oO0Oo—                                {Fore.YELLOW}║
-{Fore.YELLOW}╚═══════════════════════════════════════════════════════════════════════╝
+{Fore.YELLOW}║{Fore.WHITE}                H U D A I R U L  A L - A Q S H A                         {Fore.YELLOW}║
+{Fore.YELLOW}║{Fore.GREEN}                         INTERNAL SCRIPT                                 {Fore.YELLOW}║
+{Fore.YELLOW}║{Fore.BLUE}                            ATTACK ZEON                                  {Fore.YELLOW}║
+{Fore.YELLOW}║{Fore.WHITE}                             By:Kf'24                                    {Fore.YELLOW}║
+{Fore.YELLOW}║{Fore.LIGHTYELLOW_EX}                             ——oO0Oo—                                    {Fore.YELLOW}║
+{Fore.YELLOW}╚══════════════════════════════════════════════════════════════════════════╝
 ===>> Z E E F U MEMBUTUHKAN 35 DETIK UNTUK MEMULAI SERANGAN...!! <==={Fore.RESET}"""
 
 print(banner)
