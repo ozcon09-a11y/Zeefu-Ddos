@@ -102,7 +102,7 @@ banner = f"""
 {Fore.YELLOW}║{Fore.GREEN}                   created to depend PALESTINE..!                        {Fore.YELLOW}║
 {Fore.YELLOW}║{Fore.BLUE}                  T H E  B L E S S E D  C O U N T R Y                    {Fore.YELLOW}║
 {Fore.YELLOW}║{Fore.WHITE}                          Created By: Ozcon                              {Fore.YELLOW}║
-{Fore.YELLOW}║{Fore.LIGHTYELLOW_EX}                          ——oO0Oo——                                    {Fore.YELLOW}║
+{Fore.YELLOW}║{Fore.LIGHTYELLOW_EX}                               ——oO0Oo——                              {Fore.YELLOW}║
 {Fore.YELLOW}╚═════════════════════════════════════════════════════════════════════════╝
 ===>> Z E E F U MEMBUTUHKAN 35 DETIK UNTUK MEMULAI SERANGAN...!! <==={Fore.RESET}"""
 
