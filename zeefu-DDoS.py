@@ -103,7 +103,7 @@ banner = f"""
 {Fore.YELLOW}║{Fore.BLUE}                            ATTACK ZEON                                  {Fore.YELLOW}║
 {Fore.YELLOW}║{Fore.WHITE}                             By:Kf'24                                    {Fore.YELLOW}║
 {Fore.YELLOW}║{Fore.LIGHTYELLOW_EX}                             ——oO0Oo—                                    {Fore.YELLOW}║
-{Fore.YELLOW}╚══════════════════════════════════════════════════════════════════════════╝
+{Fore.YELLOW}╚═════════════════════════════════════════════════════════════════════════╝
 ===>> Z E E F U MEMBUTUHKAN 35 DETIK UNTUK MEMULAI SERANGAN...!! <==={Fore.RESET}"""
 
 print(banner)
