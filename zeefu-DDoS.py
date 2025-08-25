@@ -102,7 +102,7 @@ banner = f"""
 {Fore.YELLOW}║{Fore.WHITE}                             By:Kf'24                          {Fore.YELLOW}║
 {Fore.YELLOW}║{Fore.LIGHTYELLOW_EX}                             ——oO0Oo—                          {Fore.YELLOW}║
 {Fore.YELLOW}╚═══════════════════════════════════════════════════════════════╝
-===>> 35 DETIK UNTUK MEMULAI SERANGAN...!! <==={Fore.RESET}"""
+===>> Z E E F U MEMBUTUHKAN 35 DETIK UNTUK MEMULAI SERANGAN...!! <==={Fore.RESET}"""
 
 print(banner)
 host = ""
