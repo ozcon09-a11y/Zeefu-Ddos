@@ -95,7 +95,8 @@ banner = f"""
 {Fore.WHITE}    ██▒▒           ██▒▒           ██▒▒            ██▒▒             ██▒▒      ██▒▒
 {Fore.WHITE}  ██▒██▒██▒██▒▒  ██▒██▒██▒██▒▒ ██▒██▒██▒██▒▒ ██▒▒                 ██▒██▒▒
 {Fore.YELLOW}   ▒▒▒▒▒▒▒▒▒▒▒    ▒▒▒▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒▒   ▒▒▒                   ▒▒▒▒▒▒  
-{fore.WHITE}      ▒▒▒▒▒▒▒▒        ▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒▒▒▒      ▒▒                     ▒▒▒
+{Fore.WHITE}      ▒▒▒▒▒▒▒▒        ▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒▒▒▒      ▒▒                     ▒▒▒
+{Fore.CYAN}         ▒▒▒▒▒            ▒▒▒▒▒         ▒▒▒▒▒         ▒                      ▒
 {Fore.YELLOW}╔═══════════════════════════════════════════════════════════════╗
 {Fore.YELLOW}║{Fore.WHITE}                H U D A I R U L  A L - A Q S H A               {Fore.YELLOW}║
 {Fore.YELLOW}║{Fore.GREEN}                         INTERNAL SCRIPT                       {Fore.YELLOW}║
